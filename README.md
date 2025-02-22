@@ -67,22 +67,6 @@ Before running the project, ensure you have the following installed:
    - View and modify the order on the **Billing Page**.
    - Complete the order and print receipts from the **Final Page**.
 
-## 📂 Project Structure
-
-```
-/DiningEstablishmentInvoiceSystem
-│── /Views         # UI pages (Main, Billing, Final)
-│── /ViewModels    # MVVM logic for data handling
-│── /Models        # Data structures
-│── /Database      # SQLite integration
-│── /Resources     # Assets (icons, images)
-│── /Services      # Business logic
-│── App.xaml       # Application entry point
-│── MainPage.xaml  # Main Page UI
-│── Program.cs     # Startup logic
-└── README.md      # Project documentation
-```
-
 ## 📝 Usage Guide
 
 - **Select food items** using checkboxes.
