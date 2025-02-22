@@ -1,74 +1,75 @@
-# Cafe-Management-using-.NET-MAUI
-📌 Overview
-The Cafe Management System is a user-friendly application designed to streamline the billing process in restaurants. Built using .NET MAUI, it provides a structured and interactive way to order food, calculate bills, generate receipts, and maintain financial records. The app follows the MVVM (Model-View-ViewModel) architecture and stores billing data using SQLite for future reference.
 
-🎯 Features
-Main Page: Displays a menu using a Grid Layout, where users can select food items.
-Billing Page: Organizes and displays the bill dynamically using MVVM, allowing users to add/remove items.
-Final Page: Shows the total price, a unique order number, and options for New Customer and Print Bill.
-Database Storage: Uses SQLite to store billing records for future reference.
-Financial Management: Includes an earnings calculation feature to track total revenue at the end of the day.
+# Cafe Management System
 
-📸 Screenshots
+## 📌 Overview
 
-![Picture8](https://github.com/user-attachments/assets/470c396a-2828-48d6-9aa9-1bccbdc8f1ac)
-![Picture7](https://github.com/user-attachments/assets/7cf9cc3c-b84e-46bb-b2ab-95d50dc83286)
-![Picture6](https://github.com/user-attachments/assets/36822c00-7471-4df0-81e1-f01d3f09f219)
-![Picture4](https://github.com/user-attachments/assets/8c1623a1-0139-49ca-af26-d7ff0f619e62)
-![Picture3](https://github.com/user-attachments/assets/20ea8872-26e7-4b99-a23e-e3f14a623550)
-![Picture2](https://github.com/user-attachments/assets/13de849e-561e-4555-856a-ec60028f3e0b)
-![Picture1](https://github.com/user-attachments/assets/7a312a2f-9c3a-4013-a103-d119f651e6ef)
+The **Cafe Management System** is a user-friendly application designed to streamline the billing process in restaurants. Built using **.NET MAUI**, it provides a structured and interactive way to order food, calculate bills, generate receipts, and maintain financial records. The app follows the **MVVM (Model-View-ViewModel) architecture** and stores billing data using **SQLite** for future reference.
+
+## 🎯 Features
+
+- **Main Page**: Displays a menu using a **Grid Layout**, where users can select food items.
+- **Billing Page**: Organizes and displays the bill dynamically using MVVM, allowing users to add/remove items.
+- **Final Page**: Shows the total price, a unique order number, and options for **New Customer** and **Print Bill**.
+- **Database Storage**: Uses **SQLite** to store billing records for future reference.
+- **Financial Management**: Includes an earnings calculation feature to track total revenue at the end of the day.
+
+## 📸 Screenshots
+
+![Picture8](https://github.com/user-attachments/assets/71b8e289-896a-494d-858b-1e9139f7586f)
+![Picture7](https://github.com/user-attachments/assets/381c15ec-f985-40ab-a6b7-5e67ba08a517)
+![Picture6](https://github.com/user-attachments/assets/102e80e5-6b85-4beb-aeec-9e1277b70f0d)
+![Picture5](https://github.com/user-attachments/assets/e7426049-8588-4918-9ba5-b32bad422568)
+![Picture4](https://github.com/user-attachments/assets/0162c504-3abf-40a2-a50d-62b55bdaf2db)
+![Picture3](https://github.com/user-attachments/assets/7d5ac449-4422-4c2d-8c47-9482316e026a)
+![Picture2](https://github.com/user-attachments/assets/d53e3858-c3e2-4db0-b303-93ae73176466)
+![Picture1](https://github.com/user-attachments/assets/8171d224-1518-4349-8610-3250db084633)
 
 
-🚀 Installation & Setup
-Prerequisites
+## 🚀 Installation & Setup
+
+### Prerequisites
+
 Before running the project, ensure you have the following installed:
 
-.NET MAUI SDK (for cross-platform development)
-Visual Studio (with .NET MAUI workload installed)
-SQLite (included in .NET MAUI)
+- **.NET MAUI SDK** (for cross-platform development)
+- **Visual Studio** (with .NET MAUI workload installed)
+- **SQLite** (included in .NET MAUI)
 
-Steps to Run the Project:
-Clone the Repository
+### Steps to Run the Project
 
-sh
-Copy
-Edit
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-Open the Project in Visual Studio
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
 
-Launch Visual Studio and open the project folder.
-Ensure you have the .NET MAUI workload installed.
-Restore Dependencies
+2. **Open the Project in Visual Studio**
+   - Launch **Visual Studio** and open the project folder.
+   - Ensure you have the **.NET MAUI workload** installed.
 
-sh
-Copy
-Edit
-dotnet restore
-Run the Application
+3. **Restore Dependencies**
+   ```sh
+   dotnet restore
+   ```
 
-For Android:
-sh
-Copy
-Edit
-dotnet build -t:Run -f net7.0-android
-For Windows:
-sh
-Copy
-Edit
-dotnet build -t:Run -f net7.0-windows
-Use the Application
+4. **Run the Application**
+   - For Android:
+     ```sh
+     dotnet build -t:Run -f net7.0-android
+     ```
+   - For Windows:
+     ```sh
+     dotnet build -t:Run -f net7.0-windows
+     ```
 
-Select food items from the Main Page.
-View and modify the order on the Billing Page.
-Complete the order and print receipts from the Final Page.
+5. **Use the Application**
+   - Select food items from the **Main Page**.
+   - View and modify the order on the **Billing Page**.
+   - Complete the order and print receipts from the **Final Page**.
 
+## 📂 Project Structure
 
-📂 Project Structure
-bash
-Copy
-Edit
+```
 /DiningEstablishmentInvoiceSystem
 │── /Views         # UI pages (Main, Billing, Final)
 │── /ViewModels    # MVVM logic for data handling
@@ -80,23 +81,27 @@ Edit
 │── MainPage.xaml  # Main Page UI
 │── Program.cs     # Startup logic
 └── README.md      # Project documentation
+```
 
-📝 Usage Guide
-Select food items using checkboxes.
-View the total amount, including tax.
-Generate a receipt showing order details, date, and price.
-Save, print, or copy the receipt for records.
-Access previous receipts using the "Open" option.
-Reset the app for a new customer.
-Exit the app when done.
+## 📝 Usage Guide
 
-🛠️ Technologies Used
-.NET MAUI - Cross-platform framework
-C# - Backend logic
-MVVM - Architecture pattern
-SQLite - Database for storing invoices
+- **Select food items** using checkboxes.
+- **View the total** amount, including tax.
+- **Generate a receipt** showing order details, date, and price.
+- **Save, print, or copy** the receipt for records.
+- **Access previous receipts** using the "Open" option.
+- **Reset the app** for a new customer.
+- **Exit the app** when done.
 
-🤝 Contributors
-Hemateja Segu, 
-Bhanu Prakash Murala, 
-Venkata Bharath Chandra Bapanapalli
+## 🛠️ Technologies Used
+
+- **.NET MAUI** - Cross-platform framework
+- **C#** - Backend logic
+- **MVVM** - Architecture pattern
+- **SQLite** - Database for storing invoices
+
+## 🤝 Contributors
+
+- **Hemateja Segu**
+- **Bhanu Prakash Murala**
+- **Venkata Bharath Chandra Bapanapalli**
